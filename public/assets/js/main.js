@@ -10,7 +10,10 @@ $('.content script').each(function() {
 // add pagination
 var numPages = 9;
 var path = location.pathname.substr(1);
-var currentPage = path.split('/').pop()[0];
+var currentPage = path.split('/').pop();
+console.log(currentPage);
+!currentPage || currentPage === 'index.html' ? currentPage = 1 : currentPage = currentPage[0];
+console.log(currentPage)
 var pagination = '<nav><ul class="pagination">\n';
 pagination += '  <li><a href="./">1</a></li>\n';
 
