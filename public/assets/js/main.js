@@ -10,8 +10,7 @@ $('.content script').each(function() {
 // add pagination
 var numPages = 9;
 var path = location.pathname.substr(1);
-var currentPage = string.split('/').pop()[0];
-console.log(location.pathname);
+var currentPage = path.split('/').pop()[0];
 var pagination = '<nav><ul class="pagination">\n';
 pagination += '  <li><a href="./">1</a></li>\n';
 
