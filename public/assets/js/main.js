@@ -10,6 +10,7 @@ $('.content script').each(function() {
 // add pagination
 var numPages = 9;
 var currentPage = parseInt(location.pathname.substr(1)) || 1;
+console.log(location.pathname);
 var pagination = '<nav><ul class="pagination">\n';
 pagination += '  <li><a href="./">1</a></li>\n';
 
@@ -19,7 +20,6 @@ for (var i = 2; i <= numPages; i++) {
 
 pagination += '</ul></nav>';
 var $pagination = $(pagination)
-console.log(currentPage);
 $pagination.find('li').eq(currentPage-1).addClass('active');
 $('.content').prepend($pagination).append($pagination.clone())
 
