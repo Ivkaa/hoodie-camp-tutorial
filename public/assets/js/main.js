@@ -19,6 +19,7 @@ for (var i = 2; i <= numPages; i++) {
 
 pagination += '</ul></nav>';
 var $pagination = $(pagination)
+console.log(currentPage);
 $pagination.find('li').eq(currentPage-1).addClass('active');
 $('.content').prepend($pagination).append($pagination.clone())
 
