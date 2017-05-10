@@ -14,7 +14,7 @@ var pagination = '<nav><ul class="pagination">\n';
 pagination += '  <li><a href="./">1</a></li>\n';
 
 for (var i = 2; i <= numPages; i++) {
-  pagination += '  <li><a href="/'+i+'.html">'+i+'</a></li>\n';
+  pagination += '  <li><a href="./'+i+'.html">'+i+'</a></li>\n';
 };
 
 pagination += '</ul></nav>';
